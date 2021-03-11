@@ -48,7 +48,7 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://ryo-i.github.io/react-app-started",
+  "homepage": "https://ryo-i.github.io/jump-rate-generator",
   "devDependencies": {
     "@types/react-helmet": "^6.1.0"
   }
