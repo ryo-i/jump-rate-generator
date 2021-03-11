@@ -1,8 +1,8 @@
 {
     "data": {
         "header": {
-            "title":"Reactアプリスターターキット",
-            "text": "React + TypeScript + CSS in JS環境"
+            "title":"ジャンプ率ジェネレーター",
+            "text": "文字ジャンプ率を動的に変えることができます"
         },
         "main": {
             "title":"メインページです",
@@ -23,7 +23,7 @@
             }
         ],
         "footer": {
-            "text":"©️ react-app-started"
+            "text":"©️jump-rate-generator"
         }
     }
 }
