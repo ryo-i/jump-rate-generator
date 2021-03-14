@@ -14,8 +14,8 @@ import {
 // const description = Data.data.header.text;
 const mainTitle = Data.data.main.title;
 const mainText = Data.data.main.text;
-const otherTitle = Data.data.other.title;
-const otherText = Data.data.other.text;
+const aboutTitle = Data.data.about.title;
+const aboutText = Data.data.about.text;
 const homeUrl = process.env.PUBLIC_URL; // Routing
 
 
@@ -43,13 +43,13 @@ function Main() {
             <p dangerouslySetInnerHTML={{ __html: mainText }}></p>
             <Inner />
           </Route>
-          <Route path={ homeUrl + "/other" }>
+          <Route path={ homeUrl + "/about" }>
             <Helmet>
-              <title>{ otherTitle }</title>
-              <meta name="description" content={ otherText } />
+              <title>{ aboutTitle }</title>
+              <meta name="description" content={ aboutText } />
             </Helmet>
-            <h1>{ otherTitle }</h1>
-            <p dangerouslySetInnerHTML={{ __html: otherText }}></p>
+            <h1>{ aboutTitle }</h1>
+            <p dangerouslySetInnerHTML={{ __html: aboutText }}></p>
           </Route>
         </Switch>
       </SectionTag>

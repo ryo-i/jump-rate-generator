@@ -36,7 +36,7 @@ function Header() {
           <nav>
             <span>MENU:</span>
             <span><Link to={ homeUrl + "/" }>Home</Link></span>
-            <span><Link to={ homeUrl + "/other" }>Other</Link></span>
+            <span><Link to={ homeUrl + "/about" }>About</Link></span>
           </nav>
     </HeaderTag>
   );
