@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/jump-rate-generator/static/js/main.d41d3ffd.chunk.js",
-    "main.js.map": "/jump-rate-generator/static/js/main.d41d3ffd.chunk.js.map",
+    "main.js": "/jump-rate-generator/static/js/main.8f481dc1.chunk.js",
+    "main.js.map": "/jump-rate-generator/static/js/main.8f481dc1.chunk.js.map",
     "runtime-main.js": "/jump-rate-generator/static/js/runtime-main.796f040f.js",
     "runtime-main.js.map": "/jump-rate-generator/static/js/runtime-main.796f040f.js.map",
-    "static/js/2.a01c424a.chunk.js": "/jump-rate-generator/static/js/2.a01c424a.chunk.js",
-    "static/js/2.a01c424a.chunk.js.map": "/jump-rate-generator/static/js/2.a01c424a.chunk.js.map",
+    "static/js/2.7b960d05.chunk.js": "/jump-rate-generator/static/js/2.7b960d05.chunk.js",
+    "static/js/2.7b960d05.chunk.js.map": "/jump-rate-generator/static/js/2.7b960d05.chunk.js.map",
     "static/js/3.b5461cef.chunk.js": "/jump-rate-generator/static/js/3.b5461cef.chunk.js",
     "static/js/3.b5461cef.chunk.js.map": "/jump-rate-generator/static/js/3.b5461cef.chunk.js.map",
     "index.html": "/jump-rate-generator/index.html",
-    "static/js/2.a01c424a.chunk.js.LICENSE.txt": "/jump-rate-generator/static/js/2.a01c424a.chunk.js.LICENSE.txt"
+    "static/js/2.7b960d05.chunk.js.LICENSE.txt": "/jump-rate-generator/static/js/2.7b960d05.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.796f040f.js",
-    "static/js/2.a01c424a.chunk.js",
-    "static/js/main.d41d3ffd.chunk.js"
+    "static/js/2.7b960d05.chunk.js",
+    "static/js/main.8f481dc1.chunk.js"
   ]
 }
