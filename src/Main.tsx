@@ -1,17 +1,18 @@
 import React from 'react';
 import { Helmet } from "react-helmet";
 import Inner from './Inner';
+import About from './About';
 import Data from './data/data.json';
 import styled from 'styled-components';
 import { pageSize } from './style/mixin';
+import cssVariables from './style/variables.json';
 import {
   Switch,
   Route
 } from 'react-router-dom'; // Routing
 
 
-// const title = Data.data.header.title;
-// const description = Data.data.header.text;
+const variable = cssVariables.variable;
 const mainTitle = Data.data.main.title;
 const mainText = Data.data.main.text;
 const aboutTitle = Data.data.about.title;
@@ -24,6 +25,10 @@ const SectionTag = styled.section`
   ${pageSize}
   & h1 {
     font-size: 1.5em;
+  }
+  & h2 {
+    font-size: 1.25em;
+    color: ${variable.baseColor};
   }
 `;
 
@@ -50,6 +55,7 @@ function Main() {
             </Helmet>
             <h1>{ aboutTitle }</h1>
             <p dangerouslySetInnerHTML={{ __html: aboutText }}></p>
+            <About />
           </Route>
         </Switch>
       </SectionTag>
