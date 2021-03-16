@@ -9,6 +9,9 @@
 
 ※参考：[https://www.i-ryo.com/entry/2021/03/14/171321]
 
+【React】Aboutページ作成、input（type="range"）タグ配置（ジャンプ率ジェネレーター）
+
+※参考：[https://www.i-ryo.com/entry/2021/03/17/033243]
 
 ## プレビュー（GitHub Pages）
 
