@@ -1,4 +1,4 @@
-import React  from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 
 
@@ -16,11 +16,20 @@ const test = (e: React.ChangeEvent<HTMLInputElement>) => {
 // Component
 function Inner() {
 
+  const [lineLength, setLineLength] = useState(35);
+
+  const changelineLength = (e: React.ChangeEvent<HTMLInputElement>) => {
+    let changeValue: number = Number(e.target.value);
+    console.log(changeValue);
+    setLineLength(changeValue);
+  };
+
   return (
     <div className="inner">
         <section>
           <h2>行長</h2>
-          <InputRange type="range" name="range" min="10" max="50" value="35" onChange={test}></InputRange>
+          <p>値：{lineLength}</p>
+          <InputRange type="range" name="range" min="10" max="50" defaultValue={lineLength} onChange={changelineLength}></InputRange>
         </section>
         <section>
           <h2>行間</h2>
