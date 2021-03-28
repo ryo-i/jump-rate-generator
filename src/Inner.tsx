@@ -21,7 +21,7 @@ function Inner() {
     return changeValue;
   };
 
-  const ChangelineLength = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const ChangeLineLength = (e: React.ChangeEvent<HTMLInputElement>) => {
     const changeValue = useChangeValue(e);
     setLineLength(changeValue);
   };
@@ -41,7 +41,7 @@ function Inner() {
         <section>
           <h2>行長</h2>
           <p>値：{lineLength}</p>
-          <InputRange type="range" name="range" min="10" max="50" defaultValue={lineLength} onChange={ChangelineLength}></InputRange>
+          <InputRange type="range" name="range" min="10" max="50" defaultValue={lineLength} onChange={ChangeLineLength}></InputRange>
         </section>
         <section>
           <h2>行間</h2>
