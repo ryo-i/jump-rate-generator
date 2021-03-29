@@ -17,6 +17,10 @@
 
 ※参考：[https://www.i-ryo.com/entry/2021/03/19/070944]
 
+【React】独自フックで関数を抽出、全てのツマミが動いた！（ジャンプ率ジェネレーター）
+
+※参考：[https://www.i-ryo.com/entry/2021/03/30/061804]
+
 ## プレビュー（GitHub Pages）
 
 ※参考：[https://ryo-i.github.io/jump-rate-generator/]
