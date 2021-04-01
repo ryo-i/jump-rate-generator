@@ -3,21 +3,52 @@ import styled from 'styled-components';
 
 
 // Style
-const InputRange = styled.input`
-  width: 50%;
+const Setting = styled.div`
+  margin: 30px 0;
+  dt {
+    font-weight: bold;
+    .css {
+      font-weight: normal;
+    }
+  }
+  dd {
+    margin: 0 0 1em;
+  }
+  input {
+    width: 100%;
+    max-width: 600px;
+  }
+`;
+
+const Example = styled.div`
+  background: #eee;
+  display: inline-block;
+  border-radius: 10px;
+  font-size: 14px;
+  section {
+    margin: 30px;
+    line-height: 1.75em;
+    h2 {
+      color: #000;
+      line-height: 1.25em;
+      margin: 0 0 1em;
+    }
+    p {
+      margin: 0;
+    }
+  }
 `;
 
 
 // Component
 function Inner() {
-
   const [lineLength, setLineLength] = useState(35);
   const [lineHeight, setLineHeight] = useState(1.75);
-  const [jumpRate, setJumpRate] = useState(200);
+  const [jumpRate, setJumpRate] = useState(2);
+
 
   const useChangeValue = (e: React.ChangeEvent<HTMLInputElement>) => {
     let changeValue: number = Number(e.target.value);
-    console.log(changeValue);
     return changeValue;
   };
 
@@ -36,23 +67,55 @@ function Inner() {
     setJumpRate(changeValue);
   };
 
+
+  const P = styled.p`
+    line-height: ${lineHeight}em;
+  `;
+
+  const Section = styled.section`
+    max-width: ${lineLength}em;
+  `;
+
+  const H2 = styled.h2`
+    && {
+      font-size: ${jumpRate}em;
+    }
+  `;
+
+
   return (
     <div className="inner">
-        <section>
-          <h2>行長</h2>
-          <p>値：{lineLength}</p>
-          <InputRange type="range" name="range" min="10" max="50" defaultValue={lineLength} onChange={ChangeLineLength}></InputRange>
-        </section>
-        <section>
-          <h2>行間</h2>
-          <p>値：{lineHeight}</p>
-          <InputRange type="range" name="range" min="1" max="2.5" defaultValue={lineHeight} onChange={ChangeLineHeight} step="0.01"></InputRange>
-        </section>
-        <section>
-          <h2>ジャンプ率</h2>
-          <p>値：{jumpRate}</p>
-          <InputRange type="range" name="range" min="100" max="400" defaultValue={jumpRate} onChange={ChangeJumpRate}></InputRange>
-        </section>
+      <Setting>
+        <dl>
+          <dt>
+            行長：{lineLength}文字
+            <span className="css">（ max-width: {lineLength}em; ）</span>
+          </dt>
+          <dd>
+            <input type="range" name="range" min="10" max="50" defaultValue={lineLength} onChange={ChangeLineLength} />
+          </dd>
+          <dt>
+            行間：{lineHeight}倍
+            <span className="css">（ line-height: {lineHeight}em; ）</span>
+          </dt>
+          <dd>
+            <input type="range" name="range" min="1" max="2.5" step="0.05" defaultValue={lineHeight} onChange={ChangeLineHeight} />
+          </dd>
+          <dt>
+            ジャンプ率：{Math.round(jumpRate * 100)}%
+            <span className="css">（ font-height: {jumpRate}em; ）</span>
+          </dt>
+          <dd>
+            <input type="range" name="range" min="1" max="4" step="0.05" defaultValue={jumpRate} onChange={ChangeJumpRate} />
+          </dd>
+        </dl>
+      </Setting>
+      <Example>
+        <Section>
+          <H2>タイトルです、ああタイトルです、タイトルです</H2>
+          <P>本文です。本文です。本文ですったら、本文です。本文です。本文です。本文ですったら、本文です。本文です。本文です。本文ですったら、本文です。本文です。本文です。本文ですったら、本文です。本文です。本文です。本文ですったら、本文です。本文です。本文です。本文ですったら、本文です。本文です。本文です。本文ですったら、本文です。本文です。本文です。本文ですったら、本文です。本文です。本文です。本文ですったら、本文です。</P>
+        </Section>
+      </Example>
     </div>
   );
 }
