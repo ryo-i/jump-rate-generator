@@ -99,7 +99,7 @@ function Inner() {
             <span className="css">（ line-height: {lineHeight}em; ）</span>
           </dt>
           <dd>
-            <input type="range" name="range" min="1" max="2.5" step="0.05" defaultValue={lineHeight} onChange={ChangeLineHeight} />
+            <input type="range" name="range" min="1" max="3" step="0.05" defaultValue={lineHeight} onChange={ChangeLineHeight} />
           </dd>
           <dt>
             ジャンプ率：{Math.round(jumpRate * 100)}%
