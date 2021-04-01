@@ -103,7 +103,7 @@ function Inner() {
           </dd>
           <dt>
             ジャンプ率：{Math.round(jumpRate * 100)}%
-            <span className="css">（ font-height: {jumpRate}em; ）</span>
+            <span className="css">（ font-size: {jumpRate}em; ）</span>
           </dt>
           <dd>
             <input type="range" name="range" min="1" max="4" step="0.05" defaultValue={jumpRate} onChange={ChangeJumpRate} />
