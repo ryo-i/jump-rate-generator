@@ -21,6 +21,10 @@
 
 ※参考：[https://www.i-ryo.com/entry/2021/03/30/061804]
 
+【React】styled-componentsにフックの値を設定し、動的にスタイルを変更（ジャンプ率ジェネレーター完成！）
+
+※参考：[https://www.i-ryo.com/entry/2021/04/06/074030]
+
 ## プレビュー（GitHub Pages）
 
 ※参考：[https://ryo-i.github.io/jump-rate-generator/]
