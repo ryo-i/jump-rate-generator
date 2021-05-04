@@ -35,4 +35,4 @@ GitHub Pages（Reacgt版）
 
 文字ジャンプジェネレーターをNext版で作り直しました！
 
-※参考：[https://www.i-ryo.com/entry/2021/05/04/122147]
+※参考：[https://github.com/ryo-i/jump-rate-generator-2]
