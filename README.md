@@ -2,6 +2,13 @@
 
 文字ジャンプ率を動的に変えることができます
 
+## プレビュー
+
+GitHub Pages（Reacgt版）
+
+※参考：[https://ryo-i.github.io/jump-rate-generator/]
+
+Vercel（Next版）
 
 ## 詳細（ブログ）
 
@@ -25,6 +32,6 @@
 
 ※参考：[https://www.i-ryo.com/entry/2021/04/06/074030]
 
-## プレビュー（GitHub Pages）
+文字ジャンプジェネレーターをNext版で作り直しました！
 
-※参考：[https://ryo-i.github.io/jump-rate-generator/]
+※参考：[https://www.i-ryo.com/entry/2021/05/04/122147]
