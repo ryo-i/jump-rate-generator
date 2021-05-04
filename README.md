@@ -8,7 +8,6 @@ GitHub Pages（Reacgt版）
 
 ※参考：[https://ryo-i.github.io/jump-rate-generator/]
 
-Vercel（Next版）
 
 ## 詳細（ブログ）
 
@@ -31,6 +30,8 @@ Vercel（Next版）
 【React】styled-componentsにフックの値を設定し、動的にスタイルを変更（ジャンプ率ジェネレーター完成！）
 
 ※参考：[https://www.i-ryo.com/entry/2021/04/06/074030]
+
+# 姉妹アプリ
 
 文字ジャンプジェネレーターをNext版で作り直しました！
 
